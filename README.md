@@ -100,4 +100,5 @@ Each line records a timestamp and an absolute path, making the log easy to forwa
 ## Contact
 
 John Yang — <johnyang4406@gmail.com>, <john_s_yang@brown.edu>
+
 LinkedIn: <https://www.linkedin.com/in/john-yang-747726292/>
