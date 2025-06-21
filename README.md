@@ -92,8 +92,8 @@ Each line records a timestamp and an absolute path, making the log easy to forwa
 ## Cybersecurity Insights
 
 * Allowed me to firsthandedly see the importance of algorithm choice. Going from MD5/SHA-1 to SHA-256 prevents realistic collision attacks and aligns with compliance guideilnes.
-* Tangible tradeoffs when making security decisions, rooting from even the smallest details. In this case, it was detection speed vs. resource cost. Experimenting with various checking intervals (1s-60s) showed how shorter intervals reduce attacker dwell time but raise CPU usage, ultimately guiding my choice to reach a reasonable balance at a 5s default interval.
-* Reaffirmed the need for a multifaceted approach to security. This FIM script reliably flags changes on disk but misses other areas such as in-memory attacks completely, we always need layered defenses and should consider many, many factors when dealing with security.
+* Tangible tradeoffs result from even the smallest details when making security decisions. In this case, it was detection speed vs. resource cost. Experimenting with various checking intervals (1s-60s) showed how shorter intervals reduce attacker dwell time but raise CPU usage, ultimately guiding my choice to reach a reasonable balance at a 5s default interval.
+* There is a lot to think about in security. This FIM script reliably flags changes on disk but misses other areas such as in-memory attacks completely, reaffirming the need for layed defenses and a multifaceted appraoch to security.
 
 ---
 
