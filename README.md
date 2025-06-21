@@ -73,7 +73,7 @@ Follow these steps to launch the File-Integrity Monitor on any machine that has 
 
 4. Run python fim.py.
 
-5. When the script starts running, the output should look something like this: ![alt text](FIM1.jpg).
+5. When the script starts running, the output should look something like this: ![alt text](FIM1.jpg)
 
 6. Stop the monitor by pressing Ctrl+C. The script will register the interrupt and terminate.
 
