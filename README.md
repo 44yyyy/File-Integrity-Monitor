@@ -2,8 +2,6 @@
 
 This is a Python script that functions as a File Integrity Monitoring (FIM) system that detects unauthorized changes to monitored files by calculating the hashes of files and checking if it changes over time. If changed, the file and event are logged for further security analysis.
 
----
-
 ## Table of Contents
 
 1. [Intentions Behind the Project](#intentions-behind-the-project)
@@ -15,13 +13,9 @@ This is a Python script that functions as a File Integrity Monitoring (FIM) syst
 7. [Cybersecurity Insights](#cybersecurity-insights)
 8. [Contact](#contact)
 
----
-
 ## Intentions Behind the Project
 
 When I started studying basic cybersecurity concepts, especially through my CompTIA Security+ exam prep, I noticed that many host intrusion-detection systems revolve around a simple idea. They would store a trusted hash, then keep checking for changes to verify integrity. I wanted to build something from scratch that reflected this concept with my security and coding knowledge.
-
----
 
 ## Features
 
@@ -33,8 +27,6 @@ When I started studying basic cybersecurity concepts, especially through my Comp
 | Pathlib-powered portability | Works on Windows, macOS, Linux without edits. |
 | Smooth termination by Ctrl+C | Catches `KeyboardInterrupt` to avoid an unhandled traceback. |
 
----
-
 ## How It Works
 
 1. Log reset/creation – At startup the script clears (or creates) `logs/file_changes.log`, so each run begins with a clean slate.  
@@ -44,8 +36,6 @@ When I started studying basic cybersecurity concepts, especially through my Comp
    * If the hash is identical, no output is produced (the file is unchanged).  
 4. Checking interval – The loop pauses for five seconds (adjustable by changing `time.sleep(5)`) before repeating the process.  
 5. Terminate the script – Press Ctrl+C at any time; the `KeyboardInterrupt` is caught so the program terminates without an ugly traceback.
-
----
 
 ## Customizing Monitored Files
 
@@ -58,8 +48,6 @@ When I started studying basic cybersecurity concepts, especially through my Comp
    ```
 
 3. Save and rerun the script. New files will automatically receive an original hash that will be stored the first time they are seen.
-
----
 
 ## How to Run
 
@@ -79,23 +67,17 @@ Follow these steps to launch the File-Integrity Monitor on any machine that has 
 
 7. Look inside logs/file_changes.log to review records of every change detected during the session.
 
----
-
 ## Log Output
 
 ![alt text](FIM2.jpg)
 
 Each line records a timestamp and an absolute path, making the log easy to forward into a SIEM or parse with Splunk or an ELK stack.
 
----
-
 ## Cybersecurity Insights
 
 * This project allowed me to firsthandedly see the importance of choosing the appropriate hashing algorithm. Going from MD5/SHA-1 to SHA-256 prevents realistic collision attacks and aligns with modern compliance guideilnes.
 * Even the smallest details have tangible tradeoffs associated with them. In this case, it was detection speed vs. resource cost. Experimenting with various checking intervals (1s-60s) showed how shorter intervals reduce attacker dwell time but raise CPU usage, ultimately guiding my choice to reach a reasonable balance at a 5s default interval.
 * There is a lot to think about in security. This FIM script reliably flags changes on disk but of course misses other areas such as in-memory attacks completely, reaffirming the need for layered defenses and a multifaceted appraoch to security.
-
----
 
 ## Contact
 
