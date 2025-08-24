@@ -75,7 +75,7 @@ Each line records a timestamp and an absolute path, making the log easy to forwa
 
 ## Cybersecurity Insights
 
-* This project allowed me to firsthandedly see the importance of choosing the appropriate hashing algorithm. Going from MD5/SHA-1 to SHA-256 prevents realistic collision attacks and aligns with modern compliance guideilnes.
+* This project allowed me to firsthandedly see the importance of choosing the appropriate hashing algorithm. Going from MD5/SHA-1 to SHA-256 prevents realistic collision attacks and aligns with modern compliance guidelines.
 * Even the smallest details have tangible tradeoffs associated with them. In this case, it was detection speed vs. resource cost. Experimenting with various checking intervals (1s-60s) showed how shorter intervals reduce attacker dwell time but raise CPU usage, ultimately guiding my choice to reach a reasonable balance at a 5s default interval.
 * There is a lot to think about in security. This FIM script reliably flags changes on disk but of course misses other areas such as in-memory attacks completely, reaffirming the need for layered defenses and a multifaceted approach to security.
 
@@ -84,4 +84,5 @@ Each line records a timestamp and an absolute path, making the log easy to forwa
 Email: <johnyang4406@gmail.com>, <john_s_yang@brown.edu>
 
 LinkedIn: <https://www.linkedin.com/in/john-yang-747726292/>
+
 
