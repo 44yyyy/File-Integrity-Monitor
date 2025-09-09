@@ -15,7 +15,7 @@ This is a Python script that functions as a File Integrity Monitoring (FIM) syst
 
 ## Intentions Behind the Project
 
-When I started studying basic cybersecurity concepts, especially through my CompTIA Security+ exam prep, I noticed that many host intrusion-detection systems revolve around a simple idea. They would store a trusted hash, then keep checking for changes to verify integrity. I wanted to build something from scratch that reflected this concept with my security and coding knowledge.
+When I started studying basic cybersecurity concepts, especially through my CompTIA Security+ exam prep, I was interested in many host-based methods of threat detection/prevention, such as IDS/IPS and FIM. I wanted to build something from scratch that reflected this concept with my security and coding knowledge.
 
 ## Features
 
@@ -84,5 +84,6 @@ Each line records a timestamp and an absolute path, making the log easy to forwa
 Email: <johnyang4406@gmail.com>, <john_s_yang@brown.edu>
 
 LinkedIn: <https://www.linkedin.com/in/john-yang-747726292/>
+
 
 
